@@ -17,8 +17,12 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.green)
             Text("Hello, your SwiftUI")
+            Label("Favorite Books", systemImage: "books.vertical")
+                .labelStyle(.titleAndIcon)
+                .font(.largeTitle)
         }
-        .padding([.bottom,.trailing, .leading], 100)
+        .padding([.bottom,.trailing, .leading], 30)
+        
         HStack{
             Image(systemName: "folder.badge.plus")
                 //.imageScale(.large)

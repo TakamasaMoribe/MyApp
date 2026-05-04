@@ -12,10 +12,26 @@ struct ContentView: View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+                .foregroundColor(.accentColor)
+            Image(systemName: "globe.americas.fill")
+                .imageScale(.large)
+                .foregroundColor(.green)
+            Text("Hello, your SwiftUI")
         }
-        .padding()
+        .padding([.bottom,.trailing, .leading], 100)
+        HStack{
+            Image(systemName: "folder.badge.plus")
+                //.imageScale(.large)
+                //.foregroundColor(.red)
+            Image(systemName: "heart.circle.fill")
+                //.imageScale(.large)
+                //.foregroundColor(.green)
+            Image(systemName: "alarm")
+                //.imageScale(.large)
+                //.foregroundColor(.green)
+        }
+        .symbolRenderingMode(.multicolor)
+        .font(.largeTitle)
     }
 }
 
